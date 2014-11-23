@@ -34,4 +34,7 @@ DemoRails::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Loading the associated records of the objects returned by Model.find using as few queries as possible
+  config.eager_load = false
 end

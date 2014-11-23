@@ -34,4 +34,7 @@ DemoRails::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # Loading the associated records of the objects returned by Model.find using as few queries as possible
+  config.eager_load = false
 end
