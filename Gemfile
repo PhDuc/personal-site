@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.19'
+gem 'rails', '~> 4.1.8'
+gem 'railties', '~> 4.1.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,7 +13,7 @@ gem "haml"
 gem "mysql2"
 
 # Testing gem #
-gem "rspec-rails", ">= 3.0.0"
+gem "rspec-rails", ">= 3.1.0"
 
 # Utility gem #
 gem "awesome_print"
@@ -21,8 +22,8 @@ gem "awesome_print"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails', '~> 4.0.4'
+  gem 'coffee-rails', '~> 4.1.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -31,7 +32,7 @@ group :assets do
 end
 
 group :test, :development, :qa do
-  gem "pry-debugger"
+  gem "pry-byebug"
   gem "pry-rails"
   gem "pry-remote"
 end
