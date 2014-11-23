@@ -1,0 +1,28 @@
+%h1 Products
+
+%table.table
+  %thead
+    %tr
+      %td
+        %strong Title
+      %td
+        %strong Description
+      %td
+        %strong Image
+      %td
+        %strong Price
+  %tbody
+    - @all_products.each do |p|
+      %tr
+        %td
+          = p.name
+        %td
+          = p.description
+        %td
+          = p.image_url
+        %td
+          $
+          = p.price
+
+%p
+  = link_to('Create new product', {controller: 'product', action: 'new'})
