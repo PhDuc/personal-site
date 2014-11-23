@@ -14,4 +14,9 @@ class ProductController < ActionController::Base
   def create
     render action: new and return
   end
+
+  private
+  def person_params
+    params.require(:product).permit(:name, :description, :image_url, :price)
+  end
 end
