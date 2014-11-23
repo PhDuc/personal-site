@@ -1,43 +1,23 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.1.8'
-gem 'railties', '~> 4.1.8'
+gem 'rails', '~> 4.1.8'                      # Core rails gem
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-# Dynamic html #
-gem "haml"
-
-# Database #
-gem "mysql2"
-
-# Testing gem #
-gem "rspec-rails", ">= 3.1.0"
-
-# Utility gem #
-gem "awesome_print"
-
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails', '~> 4.0.4'
-  gem 'coffee-rails', '~> 4.1.0'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
-end
+gem "awesome_print"                          # Pretty print result
+gem 'coffee-rails', '~> 4.1.0'               # Coffeescript
+gem "haml"                                   # Better HTML
+gem "mysql2"                                 # Database
+gem 'jquery-rails'                           # JQuery with rails
+gem "rspec-rails", ">= 3.1.0"                # Test rspec
+gem 'sass-rails', '~> 4.0.4'                 # CSS extension
+gem 'uglifier', '>= 1.0.3'                   # JavaScript interpreter
 
 group :test, :development, :qa do
-  gem "pry-byebug"
-  gem "pry-rails"
-  gem "pry-remote"
+  gem "pry-byebug"                           # Binding pry debugger
+  gem "pry-rails"                            # Binding pry debugger
+  gem "pry-remote"                           # Remote pry debugger
 end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
