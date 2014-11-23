@@ -11,6 +11,9 @@ DemoRails::Application.routes.draw do
   post 'product/create'    => 'product#create'
   get  'product/:action'   => 'product'
 
+  # Vanity controller (not core app)
+  get 'review'             => 'demo_review#index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

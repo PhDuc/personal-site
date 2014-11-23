@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '~> 4.1.8'                      # Core rails gem
 
 gem "awesome_print"                          # Pretty print result
+gem 'autoprefixer-rails'                     # Auto add browser vendor prefixes
+gem 'bootstrap-sass'                         # Bootstrap sass port to rails
 gem 'coffee-rails', '~> 4.1.0'               # Coffeescript
 gem "haml"                                   # Better HTML
 gem "mysql2"                                 # Database
