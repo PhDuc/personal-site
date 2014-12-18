@@ -1,25 +1,51 @@
-%h1 New Product
-= form_for @product, :url => "create" do |f|
-  - if @product.errors.any?
-    #error_explaination
-      %h2
-        = pluralize @product.errors.count, 'Error'
-        prohibited this product from being saved:
+.new-product-wrapper
+  %h2.centralize New Product
+  %hr
+  = form_for @product, :url => "create" do |f|
+    - if @product.errors.any?
+      #error_explaination
+        %h2
+          = pluralize @product.errors.count, 'Error'
+          prohibited this product from being saved:
+        %ul
+          - @product.errors.full_messages.each do |msg|
+            %li= msg
+    .field
+      .col-lg-3
+        = f.label :name
+      = f.text_field :name
+    .field
+      .col-lg-3
+        = f.label :description
+      = f.text_area :description
+    .field
+      .col-lg-3
+        = f.label :price
+      = f.text_field :price
+    %hr
+    %div.centralize
+      %strong Upload product image
+    .row.centralize
+      .col-lg-3
+        = f.radio_button 'image', 'upload', checked: true
+        = label :image_upload, 'Local file'
+      .col-lg-3
+        = f.radio_button 'image', 'link'
+        = label :image_link, 'From URL'
 
-      %ul
-        - @product.errors.full_messages.each do |msg|
-          %li= msg
-  .field
-    = f.label :title
-    = f.text_field :name
-  .field
-    = f.label :description
-    = f.text_area :description
-  .field
-    = f.label :image_url
-    = f.text_field :image_url
-  .field
-    = f.label :price
-    = f.text_field :price
-  .actions
-    = f.submit 'Create Product'
+    .field.image-option.image-upload.centralize
+      = f.file_field :image
+    .field.image-option.image-link.hidden
+      .col-lg-3
+        = f.label :image_url, 'Image URL'
+      = f.text_field :image_url
+    %br
+    .actions.centralize
+      = f.submit 'Create Product'
+
+%hr
+%p.note.centralize
+  %strong NOTE:
+  Happy path. No error cases implemented. No responsive layout yet.
+
+= javascript_include_tag 'marketplace/product.js'
