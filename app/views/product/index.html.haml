@@ -1,33 +1,32 @@
-= stylesheet_link_tag 'marketplace'
+.container-fluid
+  %h1 Products
 
-%h1 Products
-
-%table.table.vertical-mid
-  %thead
-    %tr
-      %td.text-center.col-lg-1
-      %td.text-justify.col-lg-3
-        %strong Title
-      %td.text-justify.col-lg-5
-        %strong Description
-      %td.text-justify.col-lg-1
-        %strong Price
-  %tbody
-    - @all_products.each do |p|
+  %table.table.vertical-mid
+    %thead
       %tr
-        %td
-          %a{href: p.image_url, class: 'product-image'}
-            - if p.image.present? # Paperclip object. Need to call `.present?`
-              = image_tag p.image(:small), alt: "#{p.name}"
-            - else
-              %img{src: p.image_url}
-        %td.vertical-mid
-          = p.name
-        %td.vertical-mid
-          = p.description
-        %td.vertical-mid
-          $
-          = '%.2f' % p.price
+        %td.text-center.col-lg-1
+        %td.text-justify.col-lg-3
+          %strong Title
+        %td.text-justify.col-lg-5
+          %strong Description
+        %td.text-justify.col-lg-1
+          %strong Price
+    %tbody
+      - @all_products.each do |p|
+        %tr
+          %td
+            %a{href: p.image_url, class: 'product-image'}
+              - if p.image.present? # Paperclip object. Need to call `.present?`
+                = image_tag p.image(:small), alt: "#{p.name}"
+              - else
+                %img{src: p.image_url}
+          %td.vertical-mid
+            = p.name
+          %td.vertical-mid
+            = p.description
+          %td.vertical-mid
+            $
+            = '%.2f' % p.price
 
-%p
-  = link_to('Create new product', {controller: 'product', action: 'new'})
+  %p
+    = link_to('Create new product', {controller: 'product', action: 'new'})

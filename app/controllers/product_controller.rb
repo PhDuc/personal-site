@@ -1,4 +1,5 @@
 class ProductController < ApplicationController
+  layout 'marketplace'
   before_action :persist_products, only: [:index, :new, :create]
 
   def index
