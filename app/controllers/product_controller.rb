@@ -14,7 +14,7 @@ class ProductController < ApplicationController
   def create
     if valid_product_params?
       Product.create(product_params)
-      redirect_to action: 'index'
+      redirect_to '/marketplace/product'
     else
       render action: 'new' and return
     end

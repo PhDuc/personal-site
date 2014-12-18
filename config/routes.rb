@@ -1,18 +1,20 @@
 DemoRails::Application.routes.draw do
-
   ######## Obsolete. Not actually using ##########
   get  "test/test1"
   get  "test/test2"
   get  'say/:action' => 'say'
   ################################################
 
+  root to:                   'home#index', anchor: 'home'
   # Main controller
-  get  'product'           => 'product#index'
-  post 'product/create'    => 'product#create'
-  get  'product/:action'   => 'product'
+  get  'home'                          => 'home#index'
+  get  'marketplace'                   => 'product#index'
+  get  'marketplace/product'           => 'product#index'
+  post 'marketplace/product/create'    => 'product#create'
+  get  'marketplace/product/:action'   => 'product'
 
   # Vanity controller (not core app)
-  get 'review'             => 'demo_review#index'
+  get 'review'                         => 'demo_review#index'
 
 
   # The priority is based upon order of creation:
