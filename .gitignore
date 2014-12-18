@@ -13,3 +13,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore images stored by paperclip
+/app/assets/images/paperclip
