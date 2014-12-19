@@ -2,14 +2,14 @@
 <html>
 <head>
   <title> DP| Marketplace </title>
-  <%= stylesheet_link_tag    "marketplace", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag "marketplace", :media => "all" %>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
-
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "marketplace/product" %>
 </body>
 </html>

@@ -8,6 +8,9 @@ DemoRails::Application.routes.draw do
   root to:                   'home#index', anchor: 'home'
   # Main controller
   get  'home'                          => 'home#index'
+  get  'about_me'                      => 'home#about_me'
+  get  'projects'                      => 'home#projects'
+  get  'contacts'                      => 'home#contacts'
   get  'marketplace'                   => 'product#index'
   get  'marketplace/product'           => 'product#index'
   post 'marketplace/product/create'    => 'product#create'
