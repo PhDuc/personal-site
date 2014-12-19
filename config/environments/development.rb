@@ -41,8 +41,12 @@ DemoRails::Application.configure do
   # Loading the associated records of the objects returned by Model.find using as few queries as possible
   config.eager_load = false
 
-  # Paperclip options
-  Paperclip.options[:command_path] = "/usr/local/bin/"
   #in production, set to false to let Nginx or Apache handle instead
   config.serve_static_assets = true
+
+  # Paperclip options
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+
+  # Automatically inject JavaScript needed for LiveReload
+  config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 end
