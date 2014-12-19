@@ -10,16 +10,19 @@ en:
     url:
       eb1571:
         name: 'Eager loading association'
-        link: 'http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations'
+        link: 'http://goo.gl/dLBWK'
       551db8:
         name: 'Strong parameters'
-        link: 'http://edgeguides.rubyonrails.org/action_controller_overview.html#strong-parameters'
+        link: 'http://goo.gl/wKIE8M'
       d7b1d6:
         name: 'Bootstrap'
-        link: 'http://getbootstrap.com/getting-started/'
+        link: 'http://goo.gl/hU1AVD'
       bd8dd9:
         name: 'Configurations change when upgrading Rails 3 to 4'
-        link: 'http://dev.mensfeld.pl/2013/06/upgrading-to-rails-4-0-from-rails-3-2-test-case-part-i-preparations-configuration-gems/'
+        link: 'http://goo.gl/pSUOv'
       70617a:
         name: 'Handle file upload'
-        link: 'http://railscasts.com/episodes/134-paperclip'
+        link: 'http://goo.gl/6c6O'
+      2d38ef:
+        name: 'Faster live reload sass'
+        link: 'http://goo.gl/wJYpA'

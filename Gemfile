@@ -9,7 +9,6 @@ gem 'coffee-rails', '~> 4.1.0'               # Coffeescript
 gem "haml"                                   # Better HTML
 gem "mysql2"                                 # Database
 gem 'jquery-rails'                           # JQuery with rails
-gem "rspec-rails", ">= 3.1.0"                # Test rspec
 gem 'sass-rails', '~> 4.0.4'                 # CSS extension
 gem 'uglifier', '>= 1.0.3'                   # JavaScript interpreter
 gem "paperclip", "~> 4.2"                    # File uploader (need ImageMagick)
@@ -19,6 +18,11 @@ group :test, :development, :qa do
   gem "pry-byebug"                           # Binding pry debugger
   gem "pry-rails"                            # Binding pry debugger
   gem "pry-remote"                           # Remote pry debugger
+  gem "rspec-rails", ">= 3.1.0"              # Test rspec
+  gem 'guard', '>= 2.2.2', require: false    # Guard
+  gem 'guard-livereload',  require: false    # Guard + livereload
+  gem 'rack-livereload'                      # Guard + livereload
+  gem 'rb-fsevent',        require: false    # Guard + livereload
 end
 
 
