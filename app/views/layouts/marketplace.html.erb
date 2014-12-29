@@ -11,5 +11,10 @@
 <%= yield %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "marketplace/product" %>
+
+<!-- Custom Javascripts / Stylesheet-->
+<%= yield :custom_js %>
+<%= yield :custom_styles %>
+
 </body>
 </html>

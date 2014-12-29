@@ -6,6 +6,20 @@ en:
   paperclip:
     default_url: 'rails.png'
     url: 'paperclip/products/:id/:style/:basename.:extension'
+  official:
+    ruby: https://www.ruby-lang.org/en/
+    rails: http://rubyonrails.org/
+    html5: http://www.w3.org/TR/html5/
+    css3: http://www.w3.org/Style/CSS/Overview.en.html
+    js: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    python: https://www.python.org/
+    coffeescript: http://coffeescript.org/
+    mysql: http://www.mysql.com/
+    postgresql: http://www.postgresql.org/
+    scala: http://www.scala-lang.org/
+    php: http://php.net/
+    java: http://docs.oracle.com/javase
+    android: http://developer.android.com/
   review:
     url:
       eb1571:
@@ -26,3 +40,5 @@ en:
       2d38ef:
         name: 'Faster live reload sass'
         link: 'http://goo.gl/wJYpA'
+
+

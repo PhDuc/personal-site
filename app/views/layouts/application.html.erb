@@ -2,7 +2,7 @@
 <html>
 <head>
   <title> <%= render_title %></title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
 </head>
@@ -10,6 +10,10 @@
 <%= yield %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "main/nav" %>
+
+<!-- Custom Javascripts / Stylesheet-->
+<%= yield :custom_js %>
+<%= yield :custom_styles %>
 
 </body>
 </html>

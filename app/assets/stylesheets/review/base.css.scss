@@ -1,0 +1,15 @@
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.icon-lang {
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}

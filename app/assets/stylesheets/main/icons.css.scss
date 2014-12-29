@@ -1,0 +1,108 @@
+%icon-language {
+  background: url('sprites/languages.png') no-repeat;
+  display: inline-block;
+  height: 20px;
+  margin-left: 5px;
+
+  &:hover {
+    opacity: 0.5;
+    cusor: pointer;
+  }
+}
+
+.android{
+  @extend %icon-language;
+  background-position: 0 -84px ;
+  width: 16px;
+}
+
+.coffeescript{
+  @extend %icon-language;
+  background-position: 0 -42px ;
+  width: 25px;
+}
+
+.css3{
+  @extend %icon-language;
+  background-position: -48px -84px ;
+  width: 14px;
+}
+
+.html5-only{
+  @extend %icon-language;
+  background-position: -21px -63px ;
+  width: 18px;
+}
+
+.html5{
+  @extend %icon-language;
+  background-position: -33px -84px ;
+  width: 14px;
+}
+
+.java{
+  @extend %icon-language;
+  background-position: -17px -84px ;
+  width: 15px;
+}
+
+.jquery{
+  @extend %icon-language;
+  background-position: 0 0;
+  width: 81px;
+}
+
+.js-only{
+  @extend %icon-language;
+  background-position: -40px -63px ;
+  width: 18px;
+}
+
+.js{
+  @extend %icon-language;
+  background-position: -63px -84px ;
+  width: 14px;
+}
+
+.mysql{
+  @extend %icon-language;
+  background-position: 0 -21px ;
+  width: 39px;
+}
+
+.php{
+  @extend %icon-language;
+  background-position: -40px -21px ;
+  width: 38px;
+}
+
+.postgresql{
+  @extend %icon-language;
+  background-position: 0 -63px ;
+  width: 20px;
+}
+
+.python{
+  @extend %icon-language;
+  background-position: -47px -42px ;
+  width: 20px;
+}
+
+.rails{
+  @extend %icon-language;
+  background-position: -59px -63px ;
+  width: 16px;
+}
+
+.ruby{
+  @extend %icon-language;
+  background-position: -26px -42px ;
+  width: 20px;
+}
+
+.scala{
+  @extend %icon-language;
+  background-position: 0 -105px ;
+  width: 12px;
+}
+
