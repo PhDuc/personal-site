@@ -7,13 +7,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= yield %>
-  <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "main/nav" %>
-
-<!-- Custom Javascripts / Stylesheet-->
-<%= yield :custom_js %>
-<%= yield :custom_styles %>
-
+  <%= render :partial => 'shared/home_landing' %>
 </body>
 </html>

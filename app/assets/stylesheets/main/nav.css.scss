@@ -5,14 +5,14 @@
       display: block;
       list-style-type: none ;
       padding: 0;
-      height: 60px;
+      height: 35px;
       background-color: #1E1E1E;
     }
 
     li {
       float: right;
-      width: 100px;
-      height: 60px;
+      width: 80px;
+      height: 35px;
       text-align: center;
       padding: 0px;
       white-space: nowrap;
@@ -21,9 +21,9 @@
 
       a {
         color: white;
-        font-size: 18px;
+        font-size: 14px;
         position: relative;
-        top: 30%;
+        top: 20%;
         text-decoration: none;
       }
     }
