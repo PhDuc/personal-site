@@ -20,6 +20,16 @@ en:
     php: http://php.net/
     java: http://docs.oracle.com/javase
     android: http://developer.android.com/
+  social_link:
+    amazon:    http://www.amazon.com/gp/registry/wishlist/2M8XDGA4LZ3MQ
+    google:    https://plus.google.com/+DucPhanCanCode
+    youtube:   https://www.youtube.com/channel/UC_LaJzzryuuYNjyLIs0yS5Q/playlists
+    instagram: http://instagram.com/phanducsjsu/
+    facebook:  https://www.facebook.com/TrongDucPhan
+    github:    https://github.com/PhDuc
+    email:     phanducsjsu@gmail.com
+    linkedin:  https://www.linkedin.com/in/iamduc
+
   review:
     url:
       eb1571:
@@ -40,5 +50,8 @@ en:
       2d38ef:
         name: 'Faster live reload sass'
         link: 'http://goo.gl/wJYpA'
+      b0a67e:
+        name: 'Change CSS with jQuery'
+        link: 'http://goo.gl/YqJ8xX'
 
 

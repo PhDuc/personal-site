@@ -11,13 +11,16 @@ DemoRails::Application.routes.draw do
   get  'about_me'                      => 'home#about_me'
   get  'projects'                      => 'home#projects'
   get  'contacts'                      => 'home#contacts'
+
+  # Marketplace
   get  'marketplace'                   => 'product#index'
   get  'marketplace/product'           => 'product#index'
   post 'marketplace/product/create'    => 'product#create'
   get  'marketplace/product/:action'   => 'product'
 
-  # Vanity controller (not core app)
-  get 'review'                         => 'demo_review#index'
+  # Blog
+  get 'blog'                           => 'blog#index'
+  get 'blog/:action'                   => 'blog'
 
 
   # The priority is based upon order of creation:

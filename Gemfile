@@ -24,6 +24,7 @@ group :test, :development, :qa do
   gem 'guard-livereload',  require: false    # Guard + livereload
   gem 'rack-livereload'                      # Guard + livereload
   gem 'rb-fsevent',        require: false    # Guard + livereload
+  #gem 'guard-coffeescript'                  # Guard + Coffeescript. Not working for some reason
 end
 
 

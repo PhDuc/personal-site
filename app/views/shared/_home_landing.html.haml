@@ -5,10 +5,10 @@
     = yield
 
   = javascript_include_tag "application"
-  = javascript_include_tag "main/nav"
+  = javascript_include_tag "main/base"
   /* Custom Javascripts / Stylesheet */
 
   = yield :custom_js
   = yield :custom_styles
 #footer
-  .container
+  = render partial: 'shared/footer'

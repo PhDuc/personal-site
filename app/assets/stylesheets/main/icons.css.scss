@@ -1,3 +1,154 @@
+/* Social Icons */
+%icon-social {
+  background: url('sprites/social.png') no-repeat;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.addthis{
+  @extend %icon-social;
+  background-position: -50px -175px ;
+  &:hover { background-position: -100px -75px ; }
+}
+
+.amazon{
+  @extend %icon-social;
+  background-position: -25px -175px ;
+  &:hover{ background-position: 0 -175px ; }
+}
+
+.creativecommon{
+  @extend %icon-social;
+  background-position: -125px -150px ;
+  &:hover{ background-position: -100px -150px ; }
+}
+
+.dropbox{
+  @extend %icon-social;
+  background-position: -75px -150px ;
+  &:hover{ background-position: -50px -150px ; }
+}
+
+.email-me{
+  @extend %icon-social;
+  background-position: -25px -150px ;
+  &:hover{ background-position: 0 -150px ; }
+}
+
+.facebook{
+  @extend %icon-social;
+  background-position: -125px -125px ;
+  &:hover{ background-position: -100px -125px ; }
+}
+
+.flickr{
+  @extend %icon-social;
+  background-position: -75px -125px ;
+  &:hover{ background-position: -50px -125px ; }
+}
+
+.github{
+  @extend %icon-social;
+  background-position: -25px -125px ;
+  &:hover{ background-position: 0 -125px ; }
+}
+
+.google{
+  @extend %icon-social;
+  background-position: -125px -100px ;
+  &:hover{ background-position: -100px -100px ; }
+}
+
+.grooveshark{
+  @extend %icon-social;
+  background-position: -75px -100px ;
+  &:hover{ background-position: -50px -100px ; }
+}
+
+.instagram{
+  @extend %icon-social;
+  background-position: -25px -100px ;
+  &:hover{ background-position: 0 -100px ; }
+}
+
+.kickstarter{
+  @extend %icon-social;
+  background-position: -125px -75px ;
+  &:hover{ background-position: -75px -175px ; }
+}
+
+.lastfm{
+  @extend %icon-social;
+  background-position: -75px -75px ;
+  &:hover{ background-position: -50px -75px ; }
+}
+
+.linkedin{
+  @extend %icon-social;
+  background-position: -25px -75px ;
+  &:hover{ background-position: 0 -75px ; }
+}
+
+.pinterest{
+  @extend %icon-social;
+  background-position: -125px -50px ;
+  &:hover{ background-position: -100px -50px ; }
+}
+
+.quora{
+  @extend %icon-social;
+  background-position: -75px -50px ;
+  &:hover{ background-position: -50px -50px ; }
+}
+
+.reddit{
+  @extend %icon-social;
+  background-position: -25px -50px ;
+  &:hover{ background-position: 0 -50px ; }
+}
+
+.rss{
+  @extend %icon-social;
+  background-position: -125px -25px ;
+  &:hover{ background-position: -100px -25px ; }
+}
+
+.skype{
+  @extend %icon-social;
+  background-position: -75px -25px ;
+  &:hover{ background-position: -50px -25px ; }
+}
+
+.spotify{
+  @extend %icon-social;
+  background-position: -25px -25px ;
+  &:hover{ background-position: 0 -25px ; }
+}
+
+.twitter{
+  @extend %icon-social;
+  background-position: -125px 0;
+  &:hover{ background-position: -100px 0; }
+}
+
+.vimeo{
+  @extend %icon-social;
+  background-position: -75px 0;
+  &:hover{ background-position: -50px 0; }
+}
+
+.youtube{
+  @extend %icon-social;
+  background-position: -25px 0;
+  &:hover{ background-position: 0 0; }
+}
+
+
+/* Language Icons */
 %icon-language {
   background: url('sprites/languages.png') no-repeat;
   display: inline-block;

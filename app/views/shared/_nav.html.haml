@@ -1,11 +1,18 @@
 .main-nav
-  %ul
-    %li
-      = link_to 'Contacts', '/contacts'
-    %li
-      = link_to 'Projects', '/projects'
-    %li
-      = link_to 'About me', '/about_me'
-    %li
-      = link_to 'Home', '/home'
+  .container
+    %ul
+      - if @page_title == 'DP| Blog'
+        %li
+          = link_to 'Main site ►', '/home'
+      - else
+        %li
+          = link_to 'My Blog ►', '/blog/review'
+        %li
+          = link_to 'Contacts', '/contacts'
+        %li
+          = link_to 'Projects', '/projects'
+        %li
+          = link_to 'About me', '/about_me'
+        %li
+          = link_to 'Home', '/home'
 
