@@ -1,14 +1,12 @@
+= yield :custom_styles
 #header
   = render partial: 'shared/nav'
 .content-wrapper
   .container
     = yield
-
-  = javascript_include_tag "application"
-  = javascript_include_tag "main/base"
-  /* Custom Javascripts / Stylesheet */
-
-  = yield :custom_js
-  = yield :custom_styles
 #footer
   = render partial: 'shared/footer'
+
+= javascript_include_tag "application"
+= javascript_include_tag "main/base"
+= yield :custom_js
