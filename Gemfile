@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.1.5"
 gem 'rails', '~> 4.1.8'                      # Core rails gem
 
 gem "awesome_print"                          # Pretty print result
