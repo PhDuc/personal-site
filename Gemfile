@@ -7,7 +7,8 @@ gem 'autoprefixer-rails'                     # Auto add browser vendor prefixes
 gem 'bootstrap-sass'                         # Bootstrap sass port to rails
 gem 'coffee-rails', '~> 4.1.0'               # Coffeescript
 gem "haml"                                   # Better HTML
-gem "mysql2"                                 # Database
+gem "mysql2"                                 # Database (sql)
+gem 'pg'                                     # Database (postgresql)
 gem 'jquery-rails'                           # JQuery with rails
 gem 'sass-rails', '~> 4.0.4'                 # CSS extension
 gem 'uglifier', '>= 1.0.3'                   # JavaScript interpreter
