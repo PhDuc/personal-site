@@ -1,0 +1,10 @@
+!!!5
+%html
+  %head
+    %title
+      = render_title
+    = stylesheet_link_tag    'application', media: 'all'
+    = favicon_link_tag 'favicon.ico'
+    = csrf_meta_tags
+  %body
+    = render partial: 'shared/home_landing'
