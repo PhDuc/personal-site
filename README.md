@@ -1,6 +1,5 @@
-#OVERVIEW:
+[![Test Coverage](https://codeclimate.com/github/PhDuc/personal-site/badges/coverage.svg)](https://codeclimate.com/github/PhDuc/personal-site)
 
-Rails demo playground. Going through Agile Development for Rails 4 and tweaking it.
+#OVERVIEW
 
-
-
+My personal site for testing and hacking new stuffs ... (wip)
